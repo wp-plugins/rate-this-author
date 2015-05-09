@@ -1,0 +1,240 @@
+.black_overlay{
+display: none;
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index:11111;
+-moz-opacity: 0.8;
+opacity:.80;
+filter: alpha(opacity=80);
+}
+.white_content {
+display: none;
+position: fixed;
+top: 10%;
+left: 30%;
+width: 44%;
+height: auto;
+padding: 16px;
+padding-right:1px;
+max-height:550px;
+background-color: white;
+z-index:99999;
+overflow: auto;
+border-bottom: 4px solid #4EABC4;
+  -webkit-box-shadow: 0 0 3px #CACACA;
+  -moz-box-shadow: 0 0 3px #cacaca;
+  box-shadow: 0 0 3px #CACACA;
+  border-bottom-color: #4EABC4;
+  font-family: 'Droid Sans', Arial, Verdana, sans-serif;
+}
+.textright{float: right;  padding-right: 10px;}
+
+.rate_this_author
+{ 
+  float: left;
+  padding: 10px;
+  background: #3a5795;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.rate_this_author .showpop
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=date], input[type=file], input[type=search], input[type=color], input[type=datetime], input[type=datetime-local], input[type=month], input[type=range], input[type=time], input[type=week], select, textarea{width:80%;}
+.white_content .loading
+{
+  display:none;	
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 44%;
+  height: 100%;
+  padding: 16px;
+  padding-right: 1px;
+  max-height: 550px;
+  background-color: #000;
+  overflow: auto;
+  opacity: 0.15;
+}
+
+.white_content .loading img
+{
+  position:absolute;	
+  top: 42%;
+  left: 48%;
+}
+
+.white_content #review_output
+{
+  display:none;
+  float: left;
+  clear: both;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.white_content #review_output h2
+{
+  color: green;
+  font-size: 35px;
+}
+
+.white_content .error_msg
+{
+color:#f00;
+}
+
+.red-border
+{
+border:1px solid #f00 !important;
+}
+/*rating stars*/
+.webwidget_rating_simple{
+    padding: 6px 3px;
+    margin: 0px;
+    float: left;
+}
+.webwidget_rating_simple li{
+    line-height: 0px;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2px;
+    list-style: none;
+    float: left;
+    cursor: pointer;
+}
+.webwidget_rating_simple li span{
+    display: none;
+}
+
+/*Rating stars*/
+
+.popup_field_container
+{
+margin:8px 0px;
+}
+
+/*Front end stars rating*/
+.author_rating {
+  float: left;
+}
+
+.author_rating .rating_stars
+{
+ float:left;
+}
+
+.author_rating .rating_label {
+  float: left;
+  padding-right: 15px;
+}
+
+.rating_stars span.stars, .rating_stars span.stars span {
+    display: block;
+    background: url(images/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+.rating_stars span.stars span {
+    background-position: 0 0;
+}
+.form_title{
+  margin-right: 10px;
+  font-size: 22px;
+  font-family: BebasNeueRegular, arial, Georgia, serif;
+}
+.popup_label {
+  margin-bottom: 5px;
+}
+
+.default_rating_container
+{
+  width: 100%;
+  float: left;
+  margin: 3% 0;
+}
+
+.default_rating_view
+{
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.default_rating_view .rate_this_author
+{
+  clear:both;
+  margin: 2.5px 0px;
+}
+.default_rating_view .author_rating
+{
+  margin: 6px 0px;
+}
+
+.reviews_button_container
+{
+  float: left;
+  margin-bottom: 20px;
+}
+
+.reviews_list_container
+{
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.testimonial_loop {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  padding: 5px 0px 0px 0;
+}
+
+.testimonial_left {
+  float: left;
+  width: 16%;
+  text-align: left;
+}
+
+.testimonial_left img {
+  width: 70px;
+  max-width: 100%;
+  height: 75px;
+}
+
+.testimonial_right {
+  float: left;
+  width: 84%;
+}
+
+.testimonial_meta {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.testimonial_comnt {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 100;
+  padding-bottom: 13px;
+}
+.stripe-line {
+  background: url(images/stripe.png);
+  height: 12px;
+  overflow: hidden;
+  margin-top: 5px;
+}

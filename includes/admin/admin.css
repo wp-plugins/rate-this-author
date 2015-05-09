@@ -1,0 +1,119 @@
+.review_list_heading
+{
+float:left;
+clear:both;
+}
+.review_list_container
+{
+  padding: 10px;
+  width: 100%;
+}
+
+.review_list_container td,.review_list_container th
+{
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
+}
+
+.review_list_container .item.status
+{
+ width: 165px;
+}
+.review_list_container .item.status .to_be_approve
+{
+
+  padding: 5px;
+  background: #ffa500;
+  color: #fff;
+  float:left;
+  width: 65px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+.review_list_container .item.status .to_remove
+{
+
+  padding: 5px;
+  background: #f00;
+  color: #fff;
+  float:right;
+  width: 65px;
+  cursor: pointer;
+  border-radius: 4px;
+
+}
+
+.review_list_container .item.status .approved
+{
+  padding: 5px;
+  background: green;
+  color: #fff;
+  float:left;
+  width: 65px;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 1 !important;
+}
+
+/*Admin end stars rating*/
+.author_rating {
+  float: left;
+  width: 100%;
+  margin: 25px 0px;
+}
+
+.author_rating .rating_stars
+{
+ float:left;
+}
+
+.author_rating .rating_label {
+  float: left;
+  padding-right: 12%;
+  font-weight: bold;
+}
+
+.rating_stars span.stars, .rating_stars span.stars span {
+    display: block;
+    background: url(../../images/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+.rating_stars span.stars span {
+    background-position: 0 0;
+}
+
+/*Filter Author*/
+
+.filter_author_container
+{
+  float: left;
+  margin: 10px;
+}
+
+.filter_label
+{
+  float: left;
+  padding: 6px 10px 6px 0px;
+}
+
+.filter_author
+{
+  float: left;
+}
+
+.filter_author select
+{
+float:left;
+}
+
+.filter_author input[type="submit"]
+{
+  float: left;
+  width: 60px;
+  height: 28px;
+  cursor: pointer;
+}
