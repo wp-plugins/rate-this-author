@@ -35,6 +35,7 @@ require_once(dirname (__FILE__) . '/includes/memory-schema.php');
 
 add_action( 'admin_menu', 'rtauth_author_plugin_menu' );
 
+
 function rtauth_author_plugin_menu() 
 {
 	add_menu_page( 'Rate this Author Options', 'Rate This Author', 'edit_posts', 'rate-this-author-identifier', 'rtauth_rate_this_author_options' );
