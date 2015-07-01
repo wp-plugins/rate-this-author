@@ -13,7 +13,7 @@ function rtauth_popup_form()
 <div id="light" class="white_content mCustomScrollbar">
 <a href ="javascript:void(0)" class="hidepop textright">Close</a>
 	<div class="pop_up_form" style="  clear: both;">
-	<div class="form_title"><div style="float: left;">Rate '<?php the_author() ?>' here</div><div class="stripe-line" style="float: left;width: 100%"></div><div style="clear:both;"></div></div>
+	<div class="form_title"><div class="author_name">Rate '<?php the_author() ?>' here</div><div class="stripe-line" style="float: left;width: 100%"></div><div style="clear:both;"></div></div>
 	<div class="error_msg"></div>
 		<form id="thumbnail_upload" method="post" style="margin-left: 1%;margin-top:20px;" action="#" enctype="multipart/form-data">
 		<div class="popup_field_container">

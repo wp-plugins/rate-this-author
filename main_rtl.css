@@ -15,12 +15,12 @@ filter: alpha(opacity=80);
 display: none;
 position: fixed;
 top: 10%;
-left: 30%;
+right: 30%;
 width: 44%;
 height: auto;
 padding: 16px;
-padding-right:1px;
-max-height:550px;
+padding-left: 1px;
+max-height: 550px;
 background-color: white;
 z-index:99999;
 overflow: auto;
@@ -31,11 +31,11 @@ border-bottom: 4px solid #4EABC4;
   border-bottom-color: #4EABC4;
   font-family: 'Droid Sans', Arial, Verdana, sans-serif;
 }
-.textright{float: right;  padding-right: 10px;}
+.textright{float: left;  padding-right: 10px;}
 
 .rate_this_author
 { 
-  float: left;
+  float: right;
   padding: 10px;
   background: #3a5795;
   color: #fff;
@@ -54,11 +54,11 @@ textarea, input[type=text], input[type=password], input[type=email], input[type=
   display:none;	
   position: fixed;
   top: 10%;
-  left: 30%;
+  left: 26%;
   width: 44%;
   height: 100%;
   padding: 16px;
-  padding-right: 1px;
+  padding-left: 1px;
   max-height: 550px;
   background-color: #000;
   overflow: auto;
@@ -75,7 +75,7 @@ textarea, input[type=text], input[type=password], input[type=email], input[type=
 .white_content #review_output
 {
   display:none;
-  float: left;
+  float: right;
   clear: both;
   padding: 20px 0px 20px 0px;
   width: 100%;
@@ -101,7 +101,7 @@ border:1px solid #f00 !important;
 .webwidget_rating_simple{
     padding: 6px 3px;
     margin: 0px;
-    float: left;
+    float: right;
 }
 .webwidget_rating_simple li{
     line-height: 0px;
@@ -111,7 +111,7 @@ border:1px solid #f00 !important;
     margin: 0px;
     margin-left: 2px;
     list-style: none;
-    float: left;
+    float: right;
     cursor: pointer;
 }
 .webwidget_rating_simple li span{
@@ -127,17 +127,17 @@ margin:8px 0px;
 
 /*Front end stars rating*/
 .author_rating {
-  float: left;
+  float: right;
 }
 
 .author_rating .rating_stars
 {
- float:left;
+ float:right;
 }
 
 .author_rating .rating_label {
-  float: left;
-  padding-right: 15px;
+  float: right;
+  padding-left: 15px;
 }
 
 .rating_stars span.stars, .rating_stars span.stars span {
@@ -147,9 +147,8 @@ margin:8px 0px;
     height: 16px;
 }
 
-.rating_stars span.stars span {
-    background-position: 0 0;
-}
+
+
 .form_title{
   margin-right: 10px;
   font-size: 22px;
@@ -158,8 +157,9 @@ margin:8px 0px;
 
 .form_title .author_name
 {
-  float: left;
+  float: right;
 }
+
 .popup_label {
   margin-bottom: 5px;
 }
@@ -167,7 +167,7 @@ margin:8px 0px;
 .default_rating_container
 {
   width: 100%;
-  float: left;
+  float: right;
   margin: 3% 0;
 }
 
@@ -190,28 +190,28 @@ margin:8px 0px;
 
 .reviews_button_container
 {
-  float: left;
+  float: right;
   margin-bottom: 20px;
 }
 
 .reviews_list_container
 {
   clear: both;
-  float: left;
+  float: right;
   width: 100%;
 }
 
 .testimonial_loop {
-  float: left;
+  float: right;
   width: 100%;
   margin-top: 20px;
   padding: 5px 0px 0px 0;
 }
 
 .testimonial_left {
-  float: left;
+  float: right;
   width: 16%;
-  text-align: left;
+  text-align: right;
 }
 
 .testimonial_left img {
@@ -221,7 +221,7 @@ margin:8px 0px;
 }
 
 .testimonial_right {
-  float: left;
+  float: right;
   width: 84%;
 }
 
@@ -233,12 +233,12 @@ margin:8px 0px;
 
 .end_user_name
 {
- float:left;
+ float:right;
 }
 
 .end_user_stars
 {
- float:right;
+ float:left;
  color:#fff;"
 }
 
@@ -264,10 +264,4 @@ margin:8px 0px;
     padding: 0;
     position: absolute;
     width: 1px;
-}
-
-.overall_rating_num
-{
-color:#f00;
-font-weight:bold;
 }
