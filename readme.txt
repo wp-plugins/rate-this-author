@@ -4,7 +4,7 @@ Donate link: http://www.tech9logy.com/pay-with-paypal/
 Tags: author,rating,rate authors,stars,rate author with star, smooth scroll, pop up form,ajax, form, rate this author
 Requires at least: 3.1
 Tested up to: 4.2.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -89,9 +89,17 @@ It is easy to customize but skill is a factor here.
 == Changelog ==
 
 = 1.0 =
+
 * Initial Release
+
+= 1.1 =
+
+* RTL Support and Google Rich snippets.
 
 == Upgrade Notice ==
 
 = 1.0 =
 * This is the initial release of the plugin.
+
+= 1.1 =
+* RTL Support and Google Rich snippets added.

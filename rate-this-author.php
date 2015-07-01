@@ -2,7 +2,7 @@
 
 Plugin Name: Rate this Author
 Description: A very simple and lightweight Plugin for rating authors by visitors.
-Version: 1.0
+Version: 1.1
 Author: Tech9logy Creators 
 Author URI: http://www.tech9logy.com/
 
@@ -49,6 +49,7 @@ register_setting( 'rtauth-settings-group', 'invalid_image' );
 register_setting( 'rtauth-settings-group', 'image_error' );
 register_setting( 'rtauth-settings-group', 'rate_author' );
 register_setting( 'rtauth-settings-group', 'success_msg' );
+
 }
 if(!get_option( 'empty_email' )){
 add_option( 'empty_email', 'Email id is required', '', 'yes' );
@@ -136,7 +137,16 @@ require_once(dirname (__FILE__) . '/includes/admin/list.php');
 
 //Attach Style sheet and js
 function rtauth_place_ui() {
-	wp_enqueue_style( 'rtauth_main', plugins_url('main.css',__FILE__), array(), false, false );
+
+ if ( is_rtl() ) 
+  {	
+	wp_enqueue_style( 'rtauth_main', plugins_url('main_rtl.css',__FILE__), array(), false, false );
+  }
+ else
+  {
+ 	wp_enqueue_style( 'rtauth_main', plugins_url('main.css',__FILE__), array(), false, false );
+  } 
+  	wp_enqueue_style( 'rtauth-googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300', array(), false, false );
 	wp_enqueue_style( 'rtauth_mScroll-css', plugins_url('mScroll/jquery.mCustomScrollbar.css',__FILE__), array(), false, false );
 	wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'jquery-form',array('jquery'),false,true );
@@ -152,7 +162,8 @@ function rtauth_place_ui() {
 	'duplicate_user'=>get_option('duplicate_user'),
 	'invalid_image'=>get_option('invalid_image'),
 	'image_error'=>get_option('image_error'),
-	'is_author'=>is_author()
+	'is_author'=>is_author(),
+	'is_rtl'=>is_rtl()
 ));
 	wp_localize_script('rtauth_mScroll-js', 'url', array(
     'mousewheelJsUrl' => plugins_url('mScroll/jquery.mousewheel.min.js',__FILE__)
@@ -171,8 +182,16 @@ add_action( 'admin_enqueue_scripts', 'rtauth_load_admin_styles' );
 		
 		if((isset($_GET['page']) && $_GET['page']=="rate-this-author-identifier") || isset($_GET['user_id']) || $screen->base=="profile")
 		{	
-		 	wp_enqueue_style( 'rtauth_admin_css',  plugins_url('includes/admin/admin.css',__FILE__), false, '1.0.0' );
-		 	wp_enqueue_script( 'rtauth_admin', plugins_url('includes/admin/admin.js',__FILE__), array(), false, true );
+		
+		  if ( is_rtl() ) 
+		    {
+			   wp_enqueue_style( 'rtauth_admin__rtl_css',  plugins_url('includes/admin/admin_rtl.css',__FILE__), false, '1.0.0' );
+			}
+			else
+			{	
+			  wp_enqueue_style( 'rtauth_admin_css',  plugins_url('includes/admin/admin.css',__FILE__), false, '1.0.0' );
+		 	}
+			wp_enqueue_script( 'rtauth_admin', plugins_url('includes/admin/admin.js',__FILE__), array(), false, true );
 		}
 	}  
 

@@ -44,8 +44,28 @@ if(get_userdata( $author_id )->roles[0]=="author" || get_userdata( $author_id )-
 ?>
 	<div class="author_rating">
 		<div class="rating_label"><label>Overall Rating: </label></div> 
-		<div class="rating_stars"><span class="stars"><?php echo $mean_of_stars; ?></span></div>
+		<div class="rating_stars">
+			<span class="stars"><?php echo $mean_of_stars; ?></span>
+		</div>
+	
+	
 	</div>
+<!--Google Rich Snippet for Author-->	
+<div class="visuallyhidden" itemscope itemtype="http://schema.org/Review">
+  <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+    <span itemprop="ratingValue"><?php echo $mean_of_stars; ?></span>
+  </span> 
+
+  <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Person">
+    <a itemprop="sameAs" href="<?php echo the_author_meta('user_url'); ?>"><span itemprop="name"><?php the_author() ?></span></a>
+  </div>
+    
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">Visitors</span>
+  </span>	
+</div>
+<!--Google Rich Snippet for Author-->	
+	
 <?php 
 
 }
@@ -93,12 +113,13 @@ function rtauth_testimonial_func() {
 	$html .= '</div>';
 	$html .= '<div class="testimonial_right">';
 		$html .= '<div class="testimonial_meta">';
-			$html .= '<div style="float:left;">';
+			$html .= '<div class="end_user_name">';
 				$html .= '<span>'.$row->name.'</span>, ';
 				$html .= '<span style="font-size: small;">'.$row->city.'</span>';
 				//$html .= '<span>'.$row->user_email.'</span>';
 			$html .= '</div>';
-			$html .= '<div style="float:right;color:#fff;"><div class="rating_stars"><span class="stars">'.$row->rating_stars.'</span></div></div>';
+			$type_of_review= '<span class="stars">'.$row->rating_stars.'</span>';
+			$html .= '<div class="end_user_stars"><div class="rating_stars">'.$type_of_review.'</div></div>';
 			$html .= '<div style="clear:both;"></div>';
 		$html .= '</div>';
 		$html .= '<p class="testimonial_comnt">'.$row->comments.'</p>';
