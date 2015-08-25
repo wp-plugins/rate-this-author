@@ -122,9 +122,22 @@ jQuery.fn.stars = function() {
         var size = Math.max(0, (Math.min(5, val))) * 16;
         // Create stars holder
         var $span = jQuery('<span />').width(size);
-        // Replace the numerical value with stars
-        jQuery(this).html($span);
+        
+		
+		//run code for rating star when rtl
+		if(dynamicPath.is_rtl)
+		{
+				// Replace the numerical value with stars
+				jQuery(this).html($span.css("background-position", ""+size-64+"px 0"));	
+			
+		}
+		else
+		{
+				jQuery(this).html($span);		
+		}
+		
     });
+	
 }
 
 jQuery(function() {
@@ -135,3 +148,4 @@ if(dynamicPath.is_author==1)
 {
 	jQuery("footer").css("clear","both");
 }
+

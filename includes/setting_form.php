@@ -42,7 +42,7 @@ function rtauth_setting_form()
         <th scope="row">Sucess Message :</th>
         <td><input type="text" name="success_msg" value="<?php echo get_option('success_msg'); ?>" /></td>
         </tr>
-    </table>
+	</table>
     
     <?php submit_button(); ?>
 	
