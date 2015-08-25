@@ -2,7 +2,7 @@
 
 Plugin Name: Rate this Author
 Description: A very simple and lightweight Plugin for rating authors by visitors.
-Version: 1.1
+Version: 1.2
 Author: Tech9logy Creators 
 Author URI: http://www.tech9logy.com/
 
