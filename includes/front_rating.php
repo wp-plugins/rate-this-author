@@ -104,12 +104,21 @@ function rtauth_testimonial_func() {
 		{
 			$uploads = wp_upload_dir();
 			$link= esc_url( $uploads['baseurl'].'/'.get_post_meta( $row->image, '_wp_attached_file' , true )); 
+			$user_img = '<img src="'.$link.'" width="50" height="50" alt="'.$row->name.'"  />';	
 		}
 		else
 		{
+			$reg_user = get_userdatabylogin($row->name);
+			//var_dump($reg_user);
+			if($reg_user->ID){
+			$user_img = get_avatar( $reg_user->ID , 70 );
+			}else{
 			$link = plugins_url('images/dummy.jpg',dirname(__FILE__));
+			$user_img = '<img src="'.$link.'" width="70" alt="'.$row->name.'"  />';	
+			 }
+			//$link = plugins_url('images/dummy.jpg',dirname(__FILE__));
 		}
-		$html .= '<img src="'.$link.'" alt="'.$row->name.'"  />';
+		$html .= $user_img;
 	$html .= '</div>';
 	$html .= '<div class="testimonial_right">';
 		$html .= '<div class="testimonial_meta">';

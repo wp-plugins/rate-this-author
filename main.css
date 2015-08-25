@@ -18,8 +18,8 @@ top: 10%;
 left: 30%;
 width: 44%;
 height: auto;
-padding: 16px;
-padding-right:1px;
+/*padding: 16px;
+padding-right:1px;*/
 max-height:550px;
 background-color: white;
 z-index:99999;
@@ -31,7 +31,7 @@ border-bottom: 4px solid #4EABC4;
   border-bottom-color: #4EABC4;
   font-family: 'Droid Sans', Arial, Verdana, sans-serif;
 }
-.textright{float: right;  padding-right: 10px;}
+.textright{float: right;  padding-right: 20px;}
 
 .rate_this_author
 { 
@@ -49,17 +49,22 @@ border-bottom: 4px solid #4EABC4;
 }
 
 textarea, input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=date], input[type=file], input[type=search], input[type=color], input[type=datetime], input[type=datetime-local], input[type=month], input[type=range], input[type=time], input[type=week], select, textarea{width:80%;}
+
 .white_content .loading
 {
   display:none;	
-  position: fixed;
+ /* position: fixed;
   top: 10%;
   left: 30%;
-  width: 44%;
+  width: 44%;*/
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
   height: 100%;
   padding: 16px;
   padding-right: 1px;
-  max-height: 550px;
+  /*max-height: 550px;*/
   background-color: #000;
   overflow: auto;
   opacity: 0.15;
@@ -270,4 +275,27 @@ margin:8px 0px;
 {
 color:#f00;
 font-weight:bold;
+}
+.rating_widget {
+    float: left;
+    margin: 10px 0;
+    margin-bottom: 40px !important;
+}
+.auth_img {
+    float: left;
+    width: 50px;
+    margin: 0px 5px 5px 0;
+}
+.author_rating_loop {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+.author_rating_loop .rating_stars {
+    float: left;
+}
+.author_rating_loop .rating_stars p{margin-bottom:5px;}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0px !important;
 }

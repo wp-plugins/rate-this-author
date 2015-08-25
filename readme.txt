@@ -1,10 +1,10 @@
 === Rate this Author ===
 Contributors:  	Tech9logy
 Donate link: http://www.tech9logy.com/pay-with-paypal/
-Tags: author,rating,rate authors,stars,rate author with star, smooth scroll, pop up form,ajax, form, rate this author
+Tags: author,rating,rate authors,stars,rate author with star, smooth scroll, pop up form,ajax, form, rate this author, rating stars, RTL support, wordpress, post rating, posts, custom form, rating by stars, google rich snippets, pop up form, author rating, post ratings, tech9logy, tech9logy creators, plugin, wordpress plugin
 Requires at least: 3.1
 Tested up to: 4.2.1
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,9 +82,11 @@ It is easy to customize but skill is a factor here.
 
 == Screenshots ==
 
-1. Front-end view of author page after plugin installation
+1. Pop up form to rate author
 2. List of visitors who reviewed various Authors and there status.
 3. Messages Settings
+4. List of reviews o author page
+
 
 == Changelog ==
 
@@ -96,6 +98,11 @@ It is easy to customize but skill is a factor here.
 
 * RTL Support and Google Rich snippets.
 
+= 1.2 =
+
+* Auto fill rating form for logged-in user
+
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -103,3 +110,7 @@ It is easy to customize but skill is a factor here.
 
 = 1.1 =
 * RTL Support and Google Rich snippets added.
+
+= 1.2 =
+
+* Auto fill rating form for logged-in user

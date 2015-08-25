@@ -124,13 +124,21 @@ $start_from = ($page-1) * $num_rec_per_page;
 	{
 		$uploads = wp_upload_dir();
 		$link= esc_url( $uploads['baseurl'].'/'.get_post_meta( $row->image, '_wp_attached_file' , true )); 
+		$user_img = '<img src="'.$link.'" width="50" height="50" alt="'.$row->name.'"  />';	
 	}
 	else
 	{
+		$reg_user = get_userdatabylogin($row->name);
+		//var_dump($reg_user);
+		if($reg_user->ID){
+		$user_img = get_avatar( $reg_user->ID , 50 );
+		}else{
 		$link = plugins_url('../images/dummy.jpg',dirname(__FILE__));
+		$user_img = '<img src="'.$link.'" width="50" height="50" alt="'.$row->name.'"  />';	
+		 }
 	}
 	?>
-	<img src="<?php echo $link; ?>" width="50" height="50" alt="<?php echo $row->name; ?>"  />
+	<?php echo $user_img; ?>
 	</td>
 	<td class="item"><?php echo $row->user_email; ?></td>
 	<td class="item"><?php echo $row->name; ?></td>

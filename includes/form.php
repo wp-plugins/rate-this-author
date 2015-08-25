@@ -12,10 +12,11 @@ function rtauth_popup_form()
 
 <div id="light" class="white_content mCustomScrollbar">
 <a href ="javascript:void(0)" class="hidepop textright">Close</a>
-	<div class="pop_up_form" style="  clear: both;">
+	<div class="pop_up_form" style="clear: both;padding: 16px;padding-right: 1px;">
 	<div class="form_title"><div class="author_name">Rate '<?php the_author() ?>' here</div><div class="stripe-line" style="float: left;width: 100%"></div><div style="clear:both;"></div></div>
 	<div class="error_msg"></div>
 		<form id="thumbnail_upload" method="post" style="margin-left: 1%;margin-top:20px;" action="#" enctype="multipart/form-data">
+		<?php if( !is_user_logged_in() ) {  ?>
 		<div class="popup_field_container">
 			<div class="popup_label"><label>Name:</label></div> 
 			<div class="popup_field"><input type="text" name="visitor_name" id="visitor_name" /></div>
@@ -35,7 +36,13 @@ function rtauth_popup_form()
 			<div class="popup_label"><label>Profile Image:</label></div> 
 			<div class="popup_field"><input type="file" name="visitor_image" id="visitor_image_id" /></div>
 		</div>
-		
+		<?php } else{
+		global $current_user;
+      		get_currentuserinfo();		
+		 ?>
+			<input type="hidden" name="visitor_name" id="visitor_name" value="<?php echo $current_user->user_login; ?>" />
+			<input type="hidden" name="visitor_email" id="visitor_email" value="<?php echo $current_user->user_email; ?>" />
+		<?php } ?>
 		<div class="popup_field_container">
 			<div class="popup_label"><label>Rate this Author</label></div> 
 			<div class="popup_field"><input name="rating_simple3" value="" id="rating_simple3" type="hidden"></div>
