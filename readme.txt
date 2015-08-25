@@ -86,6 +86,7 @@ It is easy to customize but skill is a factor here.
 2. List of visitors who reviewed various Authors and there status.
 3. Messages Settings
 4. List of reviews o author page
+5. Widgets Area
 
 
 == Changelog ==
@@ -100,7 +101,7 @@ It is easy to customize but skill is a factor here.
 
 = 1.2 =
 
-* Auto fill rating form for logged-in user
+* Auto fill rating form for logged-in user and widgets
 
 
 == Upgrade Notice ==
@@ -113,4 +114,4 @@ It is easy to customize but skill is a factor here.
 
 = 1.2 =
 
-* Auto fill rating form for logged-in user
+* Auto fill rating form for logged-in user and widgets
