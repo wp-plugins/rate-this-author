@@ -85,7 +85,7 @@ It is easy to customize but skill is a factor here.
 1. Pop up form to rate author
 2. List of visitors who reviewed various Authors and there status.
 3. Messages Settings
-4. List of reviews o author page
+4. List of reviews of author page
 5. Widgets Area
 
 
