@@ -105,7 +105,7 @@ It is easy to customize but skill is a factor here.
 
 = 1.3 =
 
-* “headers already sent” issue resolved
+* headers already sent issue resolved
 
 
 == Upgrade Notice ==
@@ -122,4 +122,4 @@ It is easy to customize but skill is a factor here.
 
 = 1.3 =
 
-* “headers already sent” issue resolved
+* headers already sent issue resolved
