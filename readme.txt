@@ -4,7 +4,7 @@ Donate link: http://www.tech9logy.com/pay-with-paypal/
 Tags: author,rating,rate authors,stars,rate author with star, smooth scroll, pop up form,ajax, form, rate this author, rating stars, RTL support, wordpress, post rating, posts, custom form, rating by stars, google rich snippets, pop up form, author rating, post ratings, tech9logy, tech9logy creators, plugin, wordpress plugin
 Requires at least: 3.1
 Tested up to: 4.2.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,10 @@ It is easy to customize but skill is a factor here.
 
 * Auto fill rating form for logged-in user and widgets
 
+= 1.3 =
+
+* “headers already sent” issue resolved
+
 
 == Upgrade Notice ==
 
@@ -115,3 +119,7 @@ It is easy to customize but skill is a factor here.
 = 1.2 =
 
 * Auto fill rating form for logged-in user and widgets
+
+= 1.3 =
+
+* “headers already sent” issue resolved
