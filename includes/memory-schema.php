@@ -16,23 +16,10 @@ function rtauth_table_install() {
 
    global $rtauth_table_version;
 
-   global $rtauth_table_name;
+   $rtauth_table_name = $wpdb->prefix."rate_this_author";
 
-   $sql = "CREATE TABLE ".$rtauth_table_name." (
 
-  id int(11) NOT NULL AUTO_INCREMENT,
-  author_id int(11) NOT NULL,
-  user_email varchar(255) NOT NULL,
-  name varchar(255) NOT NULL,
-  city varchar(255) NOT NULL,
-  image int(11) NOT NULL,
-  comments text NOT NULL,
-  rating_stars int(1) NOT NULL,
-  approved_status int(1) NOT NULL, 	
-  UNIQUE KEY id (id)
-
-    );";
-
+   $sql = "CREATE TABLE ".$rtauth_table_name." (id int(11) NOT NULL AUTO_INCREMENT, author_id int(11) NOT NULL, user_email varchar(255) NOT NULL, name varchar(255) NOT NULL, city varchar(255) NOT NULL, image int(11) NOT NULL, comments text NOT NULL, rating_stars int(1) NOT NULL, approved_status int(1) NOT NULL, UNIQUE KEY id (id));";
 
 
    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
